@@ -5,55 +5,108 @@
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+    font-size: 7vw;
+}
+
+h3 {
+    font-size: 5vw;
 }
 
 p {
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 4vw;
 }
 
-h1, h3, p {
-    color: rgb(250, 200, 190)
+h1, h3, p, label, input {
+    color: rgb(250, 200, 190);
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
 .buttons {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 button {
-    width: 50px;
+    width: 75px;
     height: 50px;
     border: 3px solid rgb(250, 200, 190);
     border-radius: 30%;
-    margin: 5px;
+    margin: 0 1vw;
     color: rgb(250, 200, 190);
-    background: rgb(93, 149, 230)
+    background: rgb(93, 149, 230);
 }
 
 button:hover {
     background: rgb(250, 200, 190);
     color: rgb(93, 149, 230);
-    box-shadow: inset 0 0 0 3px  rgb(20, 60, 70);
+    box-shadow: inset 0 0 0 3px  rgb(93, 149, 230);
 }
 
 .jokeContainer {
     display: flex;
     justify-content: center;
+    margin: -1vw 0;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    background-color: rgb(250, 200, 190);
+    width: 100vw;
+    height: 5vw;
     position: fixed;
     bottom: 0;
 }
 
-body {
-    background-image: url('https://cdn.dribbble.com/users/44485/screenshots/2702434/male-2.gif');
-    background-size: cover;
+footer > p {
+    color: rgb(93, 149, 230);
+    font-size: 2vw;
 }
 
+.heading {
+    margin: -3vw;
+}
+
+body {
+    /* background-image: url('https://cdn.dribbble.com/users/44485/screenshots/2702434/male-2.gif');
+    background-size: cover; */
+    /* background-repeat: no-repeat; */
+    background-color: rgb(93, 149, 230);
+}
+
+a {
+    color: rgb(250, 200, 190);
+}
+
+label {
+    color: rgb(250, 200, 190);
+    font-size: 3vw;
+}
+
+input {
+    color: rgb(250, 200, 190);
+    border: 3px solid rgb(250, 200, 190);
+    /* border-radius: 30%; */
+    background: rgb(93, 149, 230);
+    margin: 1vw;
+    width: 25vw;
+    height: 4vw;
+    font-size: 2vw;
+}
+
+.signIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vw;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vw;
+}
