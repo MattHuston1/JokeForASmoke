@@ -4,12 +4,22 @@
     align-items: center;
 }
 
+h1, h3, p {
+  font-size: 7vw;
+}
+
+@media only screen and (min-width: 400px) {
+  h1, h3, p { 
+    font-size: 40px;
+  }
+}
+
 h1 {
     font-size: 7vw;
 }
 
 h3 {
-    font-size: 5vw;
+    font-size: 40px;
 }
 
 p {
