@@ -110,3 +110,12 @@ input {
     align-items: center;
     margin: 3vw;
 }
+
+#authContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#btnContainer {
+    display: flex;
+}

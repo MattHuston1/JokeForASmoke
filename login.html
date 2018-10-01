@@ -11,7 +11,16 @@
     <header class="header">
         <a href="index.html">Home</a>
     </header>
-    <form class="signIn" action="">
+    <div id="authContainer">
+        <input id="txtEmail" type="email" placeholder="Email">
+        <input id="txtPassword" type="password" placeholder="Password">
+        <div id="btnContainer">
+            <button id="btnLogin" class="btn btn-action">Log In</button>
+            <button id="btnSignup" class="btn btn-secondary">Sign Up</button>
+            <button id="btnLogout" class="btn btn-action hide">Log Out</button>
+        </div>
+    </div>
+    <!-- <form class="signIn" action="">
         <h1>Sign In</h1>
         <label for="">Username</label>
         <input type="text">
@@ -30,9 +39,10 @@
         <label for="">Verify Password</label>
         <input type="text">
         <input type="button" value="Submit">
-    </form>
+    </form> -->
     <footer>
         <p>&copy All Rights Reserved - 2018</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
