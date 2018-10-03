@@ -18,7 +18,6 @@ function regularJokes(event) {
     fetch(jokesUrl)
         .then(response => response.json())
         .then(myJSON => {
-            console.log(myJSON)
             jokes(myJSON)
         })
 }
@@ -29,7 +28,7 @@ function jokes(myJSON) {
     let random = dataArray[Math.floor(Math.random() * dataArray.length)]
 
     if (random.data.selftext.length < 100) {
-    
+
         jokeTitle.textContent = random.data.title
         jokeDescrip.textContent = random.data.selftext
         jokeList.appendChild(jokeTitle)
@@ -42,7 +41,6 @@ function oneLinerJokes(event) {
     fetch(oneLinersUrl)
         .then(response => response.json())
         .then(myJSON => {
-            console.log(myJSON)
             appendOneLiners(myJSON)
         })
 }
@@ -64,7 +62,6 @@ function clean(event) {
     fetch(cleanJokesUrl)
         .then(response => response.json())
         .then(myJSON => {
-            console.log(myJSON)
             appendCleanJokes(myJSON)
         })
 }
