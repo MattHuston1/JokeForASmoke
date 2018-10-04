@@ -25,8 +25,8 @@ function regularJokes(event) {
 function jokes(myJSON) {
 
     let dataArray = myJSON.data.children
-    let random = dataArray[Math.floor(Math.random() * dataArray.length)]
 
+    let random = dataArray[Math.floor(Math.random() * dataArray.length)]
     if (random.data.selftext.length < 100) {
 
         jokeTitle.textContent = random.data.title
@@ -35,6 +35,7 @@ function jokes(myJSON) {
         jokeList.appendChild(jokeDescrip)
     }
 }
+
 
 function oneLinerJokes(event) {
 
