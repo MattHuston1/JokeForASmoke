@@ -25,6 +25,7 @@ function regularJokes(event) {
 function jokes(myJSON) {
 
     let dataArray = myJSON.data.children
+    console.log(dataArray)
 
     let random = dataArray[Math.floor(Math.random() * dataArray.length)]
     if (random.data.selftext.length < 100) {
